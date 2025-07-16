@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visionary Design Studio - Arsitektur & Interior Design</title>
+    <meta name="description" content="Visionary Design Studio menghadirkan solusi arsitektur dan interior design dengan desain inovatif, kualitas premium, dan layanan profesional terpercaya.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            50: '#fefdf8',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        elegant: {
+                            50: '#f9fafb',
+                            100: '#f3f4f6',
+                            200: '#e5e7eb',
+                            500: '#6b7280',
+                            600: '#4b5563',
+                            700: '#374151',
+                            800: '#1f2937',
+                            900: '#111827',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-drafting-compass text-2xl text-luxury-600 mr-2"></i>
+                        <span class="text-xl font-bold text-elegant-800">Visionary Design</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda" class="text-elegant-700 hover:text-luxury-600 transition-colors">Beranda</a>
+                    <a href="#layanan" class="text-elegant-700 hover:text-luxury-600 transition-colors">Layanan</a>
+                    <a href="#portfolio" class="text-elegant-700 hover:text-luxury-600 transition-colors">Portfolio</a>
+                    <a href="#tentang" class="text-elegant-700 hover:text-luxury-600 transition-colors">Tentang</a>
+                    <a href="#kontak" class="bg-luxury-600 text-white px-4 py-2 rounded-lg hover:bg-luxury-700 transition-colors">Konsultasi</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-elegant-700 hover:text-luxury-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="pt-16 bg-gradient-to-br from-elegant-50 to-luxury-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-elegant-800 mb-6">
+                        Menciptakan Ruang
+                        <span class="text-luxury-600">Impian Anda</span>
+                    </h1>
+                    <p class="text-xl text-elegant-600 mb-8 leading-relaxed">
+                        Kami menghadirkan solusi arsitektur dan interior design yang memadukan estetika modern 
+                        dengan fungsi optimal. Setiap proyek dirancang khusus untuk mencerminkan kepribadian dan kebutuhan Anda.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-luxury-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-luxury-700 transition-colors">
+                            <i class="fas fa-pencil-ruler mr-2"></i>
+                            Mulai Proyek
+                        </button>
+                        <button class="border-2 border-luxury-600 text-luxury-600 px-8 py-3 rounded-lg font-semibold hover:bg-luxury-600 hover:text-white transition-colors">
+                            <i class="fas fa-images mr-2"></i>
+                            Lihat Portfolio
+                        </button>
+                    </div>
+                    <div class="mt-8 grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-luxury-600">200+</div>
+                            <div class="text-sm text-elegant-600">Proyek Selesai</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-luxury-600">15+</div>
+                            <div class="text-sm text-elegant-600">Tahun Pengalaman</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-luxury-600">98%</div>
+                            <div class="text-sm text-elegant-600">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-elegant-800 mb-4">Konsultasi Gratis</h3>
+                            <p class="text-elegant-600">Diskusikan ide dan konsep ruang impian Anda</p>
+                        </div>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-elegant-700 mb-2">Nama Lengkap</label>
+                                <input type="text" placeholder="Masukkan nama Anda" class="w-full px-4 py-3 border border-elegant-300 rounded-lg focus:ring-2 focus:ring-luxury-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-elegant-700 mb-2">Email</label>
+                                <input type="email" placeholder="email@domain.com" class="w-full px-4 py-3 border border-elegant-300 rounded-lg focus:ring-2 focus:ring-luxury-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-elegant-700 mb-2">Jenis Proyek</label>
+                                <select class="w-full px-4 py-3 border border-elegant-300 rounded-lg focus:ring-2 focus:ring-luxury-500 focus:border-transparent">
+                                    <option>Rumah Tinggal</option>
+                                    <option>Interior Design</option>
+                                    <option>Kantor</option>
+                                    <option>Komersial</option>
+                                    <option>Renovasi</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-elegant-700 mb-2">Budget (Opsional)</label>
+                                <select class="w-full px-4 py-3 border border-elegant-300 rounded-lg focus:ring-2 focus:ring-luxury-500 focus:border-transparent">
+                                    <option>< Rp 100 Juta</option>
+                                    <option>Rp 100 - 500 Juta</option>
+                                    <option>Rp 500 Juta - 1 Miliar</option>
+                                    <option>> Rp 1 Miliar</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-luxury-600 text-white py-3 rounded-lg font-semibold hover:bg-luxury-700 transition-colors">
+                                Jadwalkan Konsultasi
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-elegant-800 mb-4">Layanan Profesional Kami</h2>
+                <p class="text-xl text-elegant-600 max-w-3xl mx-auto">
+                    Solusi lengkap dari konsep hingga eksekusi untuk semua kebutuhan arsitektur dan interior design
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-elegant-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-luxury-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-home text-2xl text-luxury-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-elegant-800 mb-4">Arsitektur Rumah</h3>
+                    <p class="text-elegant-600 mb-6">Desain arsitektur rumah tinggal yang memadukan estetika modern dengan fungsi optimal untuk kehidupan sehari-hari.</p>
+                    <ul class="space-y-2 text-sm text-elegant-600 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Site Planning & Analysis</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>3D Visualization</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Technical Drawings</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Project Management</span>
+                        </li>
+                    </ul>
+                    <button class="text-luxury-600 font-semibold hover:text-luxury-700">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-elegant-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-luxury-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-couch text-2xl text-luxury-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-elegant-800 mb-4">Interior Design</h3>
+                    <p class="text-elegant-600 mb-6">Transformasi ruang interior dengan konsep design yang elegan, fungsional, dan sesuai dengan kepribadian Anda.</p>
+                    <ul class="space-y-2 text-sm text-elegant-600 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Space Planning</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Furniture Selection</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Color Scheme</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Lighting Design</span>
+                        </li>
+                    </ul>
+                    <button class="text-luxury-600 font-semibold hover:text-luxury-700">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-elegant-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-luxury-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-2xl text-luxury-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-elegant-800 mb-4">Komersial Design</h3>
+                    <p class="text-elegant-600 mb-6">Desain ruang komersial yang menarik pelanggan dan mendukung produktivitas bisnis dengan konsep yang profesional.</p>
+                    <ul class="space-y-2 text-sm text-elegant-600 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Office Layout Design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Retail Space Planning</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Restaurant Design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Brand Integration</span>
+                        </li>
+                    </ul>
+                    <button class="text-luxury-600 font-semibold hover:text-luxury-700">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-elegant-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-luxury-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-2xl text-luxury-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-elegant-800 mb-4">Renovasi & Remodeling</h3>
+                    <p class="text-elegant-600 mb-6">Transformasi total ruang existing dengan konsep baru yang fresh, modern, dan sesuai dengan kebutuhan terkini.</p>
+                    <ul class="space-y-2 text-sm text-elegant-600 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Existing Space Analysis</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Structural Modification</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Before & After Concept</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Phased Construction</span>
+                        </li>
+                    </ul>
+                    <button class="text-luxury-600 font-semibold hover:text-luxury-700">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-elegant-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-luxury-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cube text-2xl text-luxury-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-elegant-800 mb-4">3D Visualization</h3>
+                    <p class="text-elegant-600 mb-6">Presentasi visual realistis dengan teknologi 3D rendering terdepan untuk membantu Anda memvisualisasikan hasil akhir.</p>
+                    <ul class="space-y-2 text-sm text-elegant-600 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Photorealistic Rendering</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Virtual Reality Tour</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Animation Walkthrough</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Multiple Angle Views</span>
+                        </li>
+                    </ul>
+                    <button class="text-luxury-600 font-semibold hover:text-luxury-700">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-elegant-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-luxury-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-clipboard-check text-2xl text-luxury-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-elegant-800 mb-4">Project Management</h3>
+                    <p class="text-elegant-600 mb-6">Manajemen proyek profesional dari tahap perencanaan hingga serah terima dengan timeline dan budget yang terkontrol.</p>
+                    <ul class="space-y-2 text-sm text-elegant-600 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Timeline Management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Quality Control</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Vendor Coordination</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-500 mr-2"></i>
+                            <span>Progress Reporting</span>
+                        </li>
+                    </ul>
+                    <button class="text-luxury-600 font-semibold hover:text-luxury-700">
+                        Pelajari Lebih Lanjut <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-elegant-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-elegant-800 mb-4">Portfolio Karya Terbaik</h2>
+                <p class="text-xl text-elegant-600">Showcase proyek-proyek unggulan yang telah kami kerjakan</p>
+            </div>
+            
+            <!-- Portfolio Filter -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="bg-luxury-600 text-white px-6 py-2 rounded-lg font-semibold">Semua</button>
+                <button class="bg-white text-luxury-600 px-6 py-2 rounded-lg font-semibold border border-luxury-200 hover:bg-luxury-600 hover:text-white transition-colors">Residensial</button>
+                <button class="bg-white text-luxury-600 px-6 py-2 rounded-lg font-semibold border border-luxury-200 hover:bg-luxury-600 hover:text-white transition-colors">Komersial</button>
+                <button class="bg-white text-luxury-600 px-6 py-2 rounded-lg font-semibold border border-luxury-200 hover:bg-luxury-600 hover:text-white transition-colors">Interior</button>
+                <button class="bg-white text-luxury-600 px-6 py-2 rounded-lg font-semibold border border-luxury-200 hover:bg-luxury-600 hover:text-white transition-colors">Renovasi</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-64 bg-gradient-to-br from-elegant-200 to-elegant-300 flex items-center justify-center">
+                        <i class="fas fa-image text-6xl text-elegant-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-elegant-800">Modern Minimalist House</h3>
+                            <span class="bg-luxury-100 text-luxury-700 px-2 py-1 rounded text-xs font-semibold">Residensial</span>
+                        </div>
+                        <p class="text-elegant-600 text-sm mb-4">Desain rumah minimalis dengan konsep modern yang mengutamakan pencahayaan alami dan ventilasi optimal.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-elegant-500">Jakarta Selatan • 2024</span>
+                            <button class="text-luxury-600 hover:text-luxury-700 font-semibold text-sm">
+                                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-64 bg-gradient-to-br from-elegant-200 to-elegant-300 flex items-center justify-center">
+                        <i class="fas fa-image text-6xl text-elegant-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-elegant-800">Luxury Office Interior</h3>
+                            <span class="bg-luxury-100 text-luxury-700 px-2 py-1 rounded text-xs font-semibold">Komersial</span>
+                        </div>
+                        <p class="text-elegant-600 text-sm mb-4">Interior kantor mewah dengan konsep open space yang mendukung kolaborasi dan produktivitas tim.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-elegant-500">Sudirman • 2024</span>
+                            <button class="text-luxury-600 hover:text-luxury-700 font-semibold text-sm">
+                                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-64 bg-gradient-to-br from-elegant-200 to-elegant-300 flex items-center justify-center">
+                        <i class="fas fa-image text-6xl text-elegant-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-elegant-800">Contemporary Villa</h3>
+                            <span class="bg-luxury-100 text-luxury-700 px-2 py-1 rounded text-xs font-semibold">Residensial</span>
+                        </div>
+                        <p class="text-elegant-600 text-sm mb-4">Villa kontemporer dengan view taman yang indah dan fasilitas resort-style swimming pool.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-elegant-500">Bogor • 2023</span>
+                            <button class="text-luxury-600 hover:text-luxury-700 font-semibold text-sm">
+                                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-64 bg-gradient-to-br from-elegant-200 to-elegant-300 flex items-center justify-center">
+                        <i class="fas fa-image text-6xl text-elegant-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-elegant-800">Boutique Restaurant</h3>
+                            <span class="bg-luxury-100 text-luxury-700 px-2 py-1 rounded text-xs font-semibold">Komersial</span>
+                        </div>
+                        <p class="text-elegant-600 text-sm mb-4">Desain restoran boutique dengan suasana intimate dan sophisticated untuk fine dining experience.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-elegant-500">Menteng • 2023</span>
+                            <button class="text-luxury-600 hover:text-luxury-700 font-semibold text-sm">
+                                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-64 bg-gradient-to-br from-elegant-200 to-elegant-300 flex items-center justify-center">
+                        <i class="fas fa-image text-6xl text-elegant-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-elegant-800">Penthouse Renovation</h3>
+                            <span class="bg-luxury-100 text-luxury-700 px-2 py-1 rounded text-xs font-semibold">Renovasi</span>
+                        </div>
+                        <p class="text-elegant-600 text-sm mb-4">Renovasi total penthouse dengan konsep luxury modern dan panorama city view yang menakjubkan.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-elegant-500">Kemang • 2024</span>
+                            <button class="text-luxury-600 hover:text-luxury-700 font-semibold text-sm">
+                                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-64 bg-gradient-to-br from-elegant-200 to-elegant-300 flex items-center justify-center">
+                        <i class="fas fa-image text-6xl text-elegant-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-lg font-semibold text-elegant-800">Scandinavian Interior</h3>
+                            <span class="bg-luxury-100 text-luxury-700 px-2 py-1 rounded text-xs font-semibold">Interior</span>
+                        </div>
+                        <p class="text-elegant-600 text-sm mb-4">Interior dengan konsep scandinavian yang hangat, cozy, dan mengutamakan furniture natural wood.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-elegant-500">BSD • 2023</span>
+                            <button class="text-luxury-600 hover:text-luxury-700 font-semibold text-sm">
+                                Lihat Detail <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-luxury-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-luxury-700 transition-colors">
+                    Lihat Semua Portfolio
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-elegant-800 mb-4">Testimoni Klien</h2>
+                <p class="text-xl text-elegant-600">Kepuasan klien adalah prioritas utama kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-elegant-50 rounded-xl p-8">
+                    <div class="flex text-luxury-400 mb-4 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-elegant-600 mb-6 italic">"Tim Visionary Design berhasil mewujudkan rumah impian kami. Desainnya modern namun tetap hangat dan fungsional untuk keluarga. Proses kerjasamanya sangat profesional."</p>
+                    <div class="flex items-center">
+                        <div class="bg-luxury-200 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-luxury-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-elegant-800">Sarah & David</p>
+                            <p class="text-sm text-elegant-600">Homeowner, Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-elegant-50 rounded-xl p-8">
+                    <div class="flex text-luxury-400 mb-4 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-elegant-600 mb-6 italic">"Renovasi kantor kami selesai tepat waktu dan hasilnya melebihi ekspektasi. Desain interiornya meningkatkan produktivitas tim dan memberikan impresi profesional kepada klien."</p>
+                    <div class="flex items-center">
+                        <div class="bg-luxury-200 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-luxury-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-elegant-800">Michael Chen</p>
+                            <p class="text-sm text-elegant-600">CEO, Tech Startup</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-elegant-50 rounded-xl p-8">
+                    <div class="flex text-luxury-400 mb-4 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-elegant-600 mb-6 italic">"Layanan 3D visualization membantu kami memahami konsep sebelum konstruksi dimulai. Hasilnya persis seperti yang divisualisasikan. Sangat merekomendasikan!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-luxury-200 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-luxury-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-elegant-800">Amanda Putri</p>
+                            <p class="text-sm text-elegant-600">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-luxury-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Wujudkan Ruang Impian Anda Bersama Kami</h2>
+            <p class="text-xl text-luxury-100 mb-8">Konsultasi gratis untuk mendiskusikan proyek arsitektur dan interior design Anda</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-luxury-600 px-8 py-3 rounded-lg font-semibold hover:bg-elegant-100 transition-colors">
+                    <i class="fas fa-phone mr-2"></i>
+                    Hubungi Sekarang
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-luxury-600 transition-colors">
+                    <i class="fas fa-whatsapp mr-2"></i>
+                    WhatsApp Konsultasi
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-elegant-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-drafting-compass text-2xl text-luxury-400 mr-2"></i>
+                        <span class="text-xl font-bold">Visionary Design</span>
+                    </div>
+                    <p class="text-elegant-400 mb-4">Studio arsitektur dan interior design dengan komitmen menghadirkan solusi design inovatif dan berkualitas tinggi.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-elegant-400 hover:text-luxury-400 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-elegant-400 hover:text-luxury-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-elegant-400 hover:text-luxury-400 transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-elegant-400 hover:text-luxury-400 transition-colors">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Layanan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-elegant-400 hover:text-white transition-colors">Arsitektur Rumah</a></li>
+                        <li><a href="#" class="text-elegant-400 hover:text-white transition-colors">Interior Design</a></li>
+                        <li><a href="#" class="text-elegant-400 hover:text-white transition-colors">Komersial Design</a></li>
+                        <li><a href="#" class="text-elegant-400 hover:text-white transition-colors">3D Visualization</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Perusahaan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-elegant-400 hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="text-elegant-400 hover:text-white transition-colors">Tim Designer</a></li>
+                        <li><a href="#" class="text-elegant-400 hover:text-white transition-colors">Karir</a></li>
+                        <li><a href="#" class="text-elegant-400 hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                    <div class="space-y-2 text-elegant-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Jl. Design Boulevard No. 888, Jakarta</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>(021) 888-DESIGN</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>hello@visionarydesign.id</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-elegant-700 mt-8 pt-8 text-center text-elegant-400">
+                <p>&copy; 2024 Visionary Design Studio. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'md:hidden bg-white shadow-lg absolute top-16 left-0 w-full z-40 hidden';
+        mobileMenu.innerHTML = `
+            <div class="px-4 py-4 space-y-2">
+                <a href="#beranda" class="block py-2 text-elegant-700 hover:text-luxury-600">Beranda</a>
+                <a href="#layanan" class="block py-2 text-elegant-700 hover:text-luxury-600">Layanan</a>
+                <a href="#portfolio" class="block py-2 text-elegant-700 hover:text-luxury-600">Portfolio</a>
+                <a href="#tentang" class="block py-2 text-elegant-700 hover:text-luxury-600">Tentang</a>
+                <a href="#kontak" class="block py-2 bg-luxury-600 text-white px-4 rounded-lg text-center">Konsultasi</a>
+            </div>
+        `;
+        document.querySelector('nav').appendChild(mobileMenu);
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Portfolio filter
+        const portfolioButtons = document.querySelectorAll('section[id="portfolio"] button');
+        portfolioButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                portfolioButtons.forEach(btn => {
+                    btn.classList.remove('bg-luxury-600', 'text-white');
+                    btn.classList.add('bg-white', 'text-luxury-600', 'border', 'border-luxury-200');
+                });
+                button.classList.remove('bg-white', 'text-luxury-600', 'border', 'border-luxury-200');
+                button.classList.add('bg-luxury-600', 'text-white');
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Tim kami akan menghubungi Anda dalam 24 jam untuk konsultasi.');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMart - Toko Online Terpercaya Indonesia</title>
+    <meta name="description" content="ShopMart adalah toko online terpercaya dengan ribuan produk berkualitas, pengiriman cepat, dan harga terjangkau di seluruh Indonesia.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        shop: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        sale: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            200: '#fecaca',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Top Bar -->
+    <div class="bg-shop-800 text-white text-sm py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-truck mr-1"></i>Gratis Ongkir min. Rp 100K</span>
+                <span><i class="fas fa-undo mr-1"></i>Garansi 30 Hari</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span>Hotline: (021) 123-SHOP</span>
+                <span>|</span>
+                <a href="#" class="hover:text-shop-200">Bantuan</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-shopping-bag text-2xl text-shop-600 mr-2"></i>
+                        <span class="text-2xl font-bold text-gray-800">ShopMart</span>
+                    </div>
+                </div>
+                
+                <!-- Search Bar -->
+                <div class="hidden md:flex items-center flex-1 max-w-lg mx-8">
+                    <div class="relative w-full">
+                        <input type="text" placeholder="Cari produk, brand, atau kategori..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-shop-500 focus:border-transparent">
+                        <button class="absolute right-2 top-2 text-gray-400 hover:text-shop-600">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-700 hover:text-shop-600 relative">
+                        <i class="fas fa-heart text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-sale-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    </button>
+                    <button class="text-gray-700 hover:text-shop-600 relative">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-shop-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">5</span>
+                    </button>
+                    <button class="bg-shop-600 text-white px-4 py-2 rounded-lg hover:bg-shop-700 transition-colors">
+                        <i class="fas fa-user mr-2"></i>
+                        Masuk
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories Menu -->
+        <div class="bg-shop-50 border-t">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-8 py-3 overflow-x-auto">
+                    <a href="#" class="text-shop-800 hover:text-shop-600 whitespace-nowrap font-medium">Semua Kategori</a>
+                    <a href="#" class="text-gray-700 hover:text-shop-600 whitespace-nowrap">Fashion</a>
+                    <a href="#" class="text-gray-700 hover:text-shop-600 whitespace-nowrap">Elektronik</a>
+                    <a href="#" class="text-gray-700 hover:text-shop-600 whitespace-nowrap">Kecantikan</a>
+                    <a href="#" class="text-gray-700 hover:text-shop-600 whitespace-nowrap">Home & Living</a>
+                    <a href="#" class="text-gray-700 hover:text-shop-600 whitespace-nowrap">Olahraga</a>
+                    <a href="#" class="text-gray-700 hover:text-shop-600 whitespace-nowrap">Makanan</a>
+                    <a href="#" class="text-gray-700 hover:text-shop-600 whitespace-nowrap">Buku</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="bg-gradient-to-r from-shop-600 to-shop-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        Belanja Online
+                        <span class="text-shop-200">Mudah & Terpercaya</span>
+                    </h1>
+                    <p class="text-xl text-shop-100 mb-8 leading-relaxed">
+                        Ribuan produk berkualitas dengan harga terbaik. Gratis ongkir, pembayaran aman, 
+                        dan garansi kepuasan 100%. Belanja sekarang, bahagia selamanya!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-shop-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            <i class="fas fa-gift mr-2"></i>
+                            Lihat Promo
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-shop-600 transition-colors">
+                            <i class="fas fa-download mr-2"></i>
+                            Download App
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                        <i class="fas fa-shipping-fast text-3xl text-shop-200 mb-3"></i>
+                        <h3 class="font-semibold mb-2">Pengiriman Cepat</h3>
+                        <p class="text-sm text-shop-100">Same day delivery Jakarta</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                        <i class="fas fa-shield-alt text-3xl text-shop-200 mb-3"></i>
+                        <h3 class="font-semibold mb-2">Pembayaran Aman</h3>
+                        <p class="text-sm text-shop-100">SSL encrypted & secure</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                        <i class="fas fa-medal text-3xl text-shop-200 mb-3"></i>
+                        <h3 class="font-semibold mb-2">Produk Original</h3>
+                        <p class="text-sm text-shop-100">100% authentic guarantee</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                        <i class="fas fa-headset text-3xl text-shop-200 mb-3"></i>
+                        <h3 class="font-semibold mb-2">Customer Support</h3>
+                        <p class="text-sm text-shop-100">24/7 live chat support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sale Section -->
+    <section class="py-8 bg-sale-50 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center">
+                    <i class="fas fa-bolt text-2xl text-sale-600 mr-3"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">Flash Sale</h2>
+                    <div class="ml-6 flex items-center text-sale-600">
+                        <span class="text-sm mr-2">Berakhir dalam:</span>
+                        <div class="flex space-x-1">
+                            <span class="bg-sale-600 text-white px-2 py-1 rounded text-sm font-bold">02</span>
+                            <span>:</span>
+                            <span class="bg-sale-600 text-white px-2 py-1 rounded text-sm font-bold">45</span>
+                            <span>:</span>
+                            <span class="bg-sale-600 text-white px-2 py-1 rounded text-sm font-bold">30</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="text-shop-600 hover:text-shop-700 font-semibold">
+                    Lihat Semua <i class="fas fa-arrow-right ml-1"></i>
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="relative">
+                        <div class="h-32 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-3xl text-gray-400"></i>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-sale-500 text-white px-2 py-1 rounded text-xs font-bold">-70%</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="text-sm font-medium text-gray-800 mb-1">Smartphone Android</h3>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sale-600 font-bold">Rp 899K</span>
+                            <span class="text-gray-400 text-xs line-through">Rp 2.999K</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Terjual 234</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="relative">
+                        <div class="h-32 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-tshirt text-3xl text-gray-400"></i>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-sale-500 text-white px-2 py-1 rounded text-xs font-bold">-50%</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="text-sm font-medium text-gray-800 mb-1">Kaos Premium</h3>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sale-600 font-bold">Rp 75K</span>
+                            <span class="text-gray-400 text-xs line-through">Rp 150K</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Terjual 156</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="relative">
+                        <div class="h-32 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-headphones text-3xl text-gray-400"></i>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-sale-500 text-white px-2 py-1 rounded text-xs font-bold">-60%</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="text-sm font-medium text-gray-800 mb-1">Headphone Wireless</h3>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sale-600 font-bold">Rp 199K</span>
+                            <span class="text-gray-400 text-xs line-through">Rp 499K</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Terjual 89</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="relative">
+                        <div class="h-32 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-watch text-3xl text-gray-400"></i>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-sale-500 text-white px-2 py-1 rounded text-xs font-bold">-45%</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="text-sm font-medium text-gray-800 mb-1">Smartwatch Sports</h3>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sale-600 font-bold">Rp 549K</span>
+                            <span class="text-gray-400 text-xs line-through">Rp 999K</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Terjual 67</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="relative">
+                        <div class="h-32 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-laptop text-3xl text-gray-400"></i>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-sale-500 text-white px-2 py-1 rounded text-xs font-bold">-35%</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="text-sm font-medium text-gray-800 mb-1">Laptop Gaming</h3>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sale-600 font-bold">Rp 6.5Jt</span>
+                            <span class="text-gray-400 text-xs line-through">Rp 10Jt</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Terjual 23</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="relative">
+                        <div class="h-32 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-gamepad text-3xl text-gray-400"></i>
+                        </div>
+                        <div class="absolute top-2 left-2 bg-sale-500 text-white px-2 py-1 rounded text-xs font-bold">-55%</div>
+                    </div>
+                    <div class="p-3">
+                        <h3 class="text-sm font-medium text-gray-800 mb-1">Gaming Controller</h3>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sale-600 font-bold">Rp 135K</span>
+                            <span class="text-gray-400 text-xs line-through">Rp 300K</span>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1">Terjual 145</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Kategori Populer</h2>
+                <p class="text-xl text-gray-600">Temukan produk favorit di berbagai kategori pilihan</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
+                <div class="text-center group">
+                    <div class="bg-shop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-shop-200 transition-colors">
+                        <i class="fas fa-mobile-alt text-2xl text-shop-600"></i>
+                    </div>
+                    <h3 class="text-sm font-medium text-gray-800">Handphone</h3>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-shop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-shop-200 transition-colors">
+                        <i class="fas fa-tshirt text-2xl text-shop-600"></i>
+                    </div>
+                    <h3 class="text-sm font-medium text-gray-800">Fashion</h3>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-shop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-shop-200 transition-colors">
+                        <i class="fas fa-laptop text-2xl text-shop-600"></i>
+                    </div>
+                    <h3 class="text-sm font-medium text-gray-800">Komputer</h3>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-shop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-shop-200 transition-colors">
+                        <i class="fas fa-gem text-2xl text-shop-600"></i>
+                    </div>
+                    <h3 class="text-sm font-medium text-gray-800">Kecantikan</h3>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-shop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-shop-200 transition-colors">
+                        <i class="fas fa-home text-2xl text-shop-600"></i>
+                    </div>
+                    <h3 class="text-sm font-medium text-gray-800">Rumah</h3>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-shop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-shop-200 transition-colors">
+                        <i class="fas fa-dumbbell text-2xl text-shop-600"></i>
+                    </div>
+                    <h3 class="text-sm font-medium text-gray-800">Olahraga</h3>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-shop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-shop-200 transition-colors">
+                        <i class="fas fa-book text-2xl text-shop-600"></i>
+                    </div>
+                    <h3 class="text-sm font-medium text-gray-800">Buku</h3>
+                </div>
+                <div class="text-center group">
+                    <div class="bg-shop-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-shop-200 transition-colors">
+                        <i class="fas fa-ellipsis-h text-2xl text-shop-600"></i>
+                    </div>
+                    <h3 class="text-sm font-medium text-gray-800">Lainnya</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Produk Pilihan</h2>
+                <p class="text-xl text-gray-600">Produk terbaik dengan rating tinggi dan review positif</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-6xl text-gray-400"></i>
+                        </div>
+                        <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-sale-500">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="absolute bottom-3 left-3 bg-shop-600 text-white px-2 py-1 rounded text-xs font-bold">Best Seller</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">iPhone 15 Pro Max</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(4.9) • 1.2K terjual</span>
+                        </div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-shop-600">Rp 18.999K</span>
+                                <p class="text-sm text-gray-500">Cicilan 0% • Gratis Ongkir</p>
+                            </div>
+                        </div>
+                        <button class="w-full bg-shop-600 text-white py-2 rounded-lg font-semibold hover:bg-shop-700 transition-colors">
+                            + Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-laptop text-6xl text-gray-400"></i>
+                        </div>
+                        <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-sale-500">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="absolute bottom-3 left-3 bg-sale-500 text-white px-2 py-1 rounded text-xs font-bold">Promo</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">MacBook Air M3</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(4.8) • 456 terjual</span>
+                        </div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-shop-600">Rp 16.999K</span>
+                                <p class="text-sm text-gray-500">Cicilan 0% • Gratis Ongkir</p>
+                            </div>
+                        </div>
+                        <button class="w-full bg-shop-600 text-white py-2 rounded-lg font-semibold hover:bg-shop-700 transition-colors">
+                            + Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-headphones text-6xl text-gray-400"></i>
+                        </div>
+                        <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-sale-500">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="absolute bottom-3 left-3 bg-shop-600 text-white px-2 py-1 rounded text-xs font-bold">New</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">AirPods Pro</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(4.7) • 789 terjual</span>
+                        </div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-shop-600">Rp 3.799K</span>
+                                <p class="text-sm text-gray-500">Cicilan 0% • Gratis Ongkir</p>
+                            </div>
+                        </div>
+                        <button class="w-full bg-shop-600 text-white py-2 rounded-lg font-semibold hover:bg-shop-700 transition-colors">
+                            + Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                            <i class="fas fa-watch text-6xl text-gray-400"></i>
+                        </div>
+                        <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-400 hover:text-sale-500">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <div class="absolute bottom-3 left-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Hot</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Apple Watch Series 9</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(4.9) • 634 terjual</span>
+                        </div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-shop-600">Rp 5.999K</span>
+                                <p class="text-sm text-gray-500">Cicilan 0% • Gratis Ongkir</p>
+                            </div>
+                        </div>
+                        <button class="w-full bg-shop-600 text-white py-2 rounded-lg font-semibold hover:bg-shop-700 transition-colors">
+                            + Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-shop-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-shop-700 transition-colors">
+                    Lihat Semua Produk
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-shop-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Jangan Lewatkan Promo Spesial</h2>
+            <p class="text-xl text-shop-100 mb-8">Dapatkan info promo, diskon, dan produk terbaru langsung di email Anda</p>
+            <div class="max-w-md mx-auto flex gap-4">
+                <input type="email" placeholder="Masukkan email Anda" class="flex-1 px-4 py-3 rounded-lg text-gray-800">
+                <button class="bg-sale-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sale-600 transition-colors">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shopping-bag text-2xl text-shop-400 mr-2"></i>
+                        <span class="text-2xl font-bold">ShopMart</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Toko online terpercaya dengan ribuan produk berkualitas dan pengiriman cepat ke seluruh Indonesia.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-shop-400 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-shop-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-shop-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-shop-400 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kategori</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Handphone & Tablet</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Komputer & Laptop</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Fashion Pria</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Fashion Wanita</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Bantuan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cara Berbelanja</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Metode Pembayaran</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pengiriman</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Kebijakan Return</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Jl. E-commerce No. 123, Jakarta</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>(021) 123-SHOP</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>cs@shopmart.id</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ShopMart. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Flash sale countdown timer
+        function updateCountdown() {
+            const countdown = document.querySelectorAll('.bg-sale-600');
+            let hours = 2;
+            let minutes = 45;
+            let seconds = 30;
+
+            setInterval(() => {
+                seconds--;
+                if (seconds < 0) {
+                    seconds = 59;
+                    minutes--;
+                    if (minutes < 0) {
+                        minutes = 59;
+                        hours--;
+                        if (hours < 0) {
+                            hours = 0;
+                            minutes = 0;
+                            seconds = 0;
+                        }
+                    }
+                }
+
+                countdown[0].textContent = hours.toString().padStart(2, '0');
+                countdown[1].textContent = minutes.toString().padStart(2, '0');
+                countdown[2].textContent = seconds.toString().padStart(2, '0');
+            }, 1000);
+        }
+
+        updateCountdown();
+
+        // Search functionality
+        document.querySelector('input[type="text"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                alert('Mencari: ' + this.value);
+            }
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('button:contains("+ Keranjang")').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Produk ditambahkan ke keranjang!');
+            });
+        });
+
+        // Newsletter subscription
+        document.querySelector('button:contains("Subscribe")').addEventListener('click', function() {
+            const email = document.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Terima kasih! Anda telah berlangganan newsletter kami.');
+            }
+        });
+    </script>
+</body>
+</html>
