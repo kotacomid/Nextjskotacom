@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBike Indonesia - Sepeda Listrik Ramah Lingkungan</title>
+    <meta name="description" content="EcoBike Indonesia menjual sepeda listrik berkualitas tinggi, ramah lingkungan, dengan teknologi terdepan untuk mobilitas masa depan.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eco: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        electric: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50 border-b-4 border-eco-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-bicycle text-2xl text-eco-600 mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">EcoBike Indonesia</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda" class="text-gray-700 hover:text-eco-600 transition-colors">Beranda</a>
+                    <a href="#produk" class="text-gray-700 hover:text-eco-600 transition-colors">Produk</a>
+                    <a href="#teknologi" class="text-gray-700 hover:text-eco-600 transition-colors">Teknologi</a>
+                    <a href="#tentang" class="text-gray-700 hover:text-eco-600 transition-colors">Tentang Kami</a>
+                    <a href="#kontak" class="bg-eco-600 text-white px-4 py-2 rounded-lg hover:bg-eco-700 transition-colors">Beli Sekarang</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-700 hover:text-eco-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="pt-16 bg-gradient-to-br from-eco-50 to-electric-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        Revolusi Mobilitas 
+                        <span class="text-eco-600">Ramah Lingkungan</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Nikmati perjalanan yang menyenangkan dengan sepeda listrik berkualitas tinggi. 
+                        Hemat energi, ramah lingkungan, dan dilengkapi teknologi smart terdepan.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-eco-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-eco-700 transition-colors">
+                            <i class="fas fa-shopping-cart mr-2"></i>
+                            Lihat Koleksi
+                        </button>
+                        <button class="border-2 border-eco-600 text-eco-600 px-8 py-3 rounded-lg font-semibold hover:bg-eco-600 hover:text-white transition-colors">
+                            <i class="fas fa-play mr-2"></i>
+                            Lihat Demo
+                        </button>
+                    </div>
+                    <div class="mt-8 flex items-center space-x-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-leaf text-eco-500 mr-2"></i>
+                            <span class="text-gray-600">Zero Emission</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-battery-full text-electric-500 mr-2"></i>
+                            <span class="text-gray-600">80km Range</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-tachometer-alt text-eco-500 mr-2"></i>
+                            <span class="text-gray-600">45 km/h</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Promo Hari Ini!</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-eco-100 rounded-lg p-4">
+                                <div class="text-center">
+                                    <span class="text-3xl font-bold text-eco-700">50%</span>
+                                    <p class="text-eco-600 font-semibold">OFF Aksesoris</p>
+                                </div>
+                            </div>
+                            <div class="bg-electric-100 rounded-lg p-4">
+                                <div class="text-center">
+                                    <span class="text-eco-700 font-semibold">Free Ongkir</span>
+                                    <p class="text-gray-600">Seluruh Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="bg-gray-100 rounded-lg p-4">
+                                <div class="text-center">
+                                    <span class="text-eco-700 font-semibold">Garansi 2 Tahun</span>
+                                    <p class="text-gray-600">Motor & Baterai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Mengapa Pilih EcoBike?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Sepeda listrik dengan teknologi terdepan untuk masa depan yang lebih hijau
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-eco-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-2xl text-eco-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Ramah Lingkungan</h3>
+                    <p class="text-gray-600">Zero emission, kontribusi nyata untuk planet yang lebih bersih</p>
+                </div>
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-electric-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-battery-full text-2xl text-electric-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Baterai Tahan Lama</h3>
+                    <p class="text-gray-600">Jangkauan hingga 80km dengan sekali pengisian</p>
+                </div>
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-eco-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-2xl text-eco-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Hemat Biaya</h3>
+                    <p class="text-gray-600">Biaya operasional rendah, investasi jangka panjang yang cerdas</p>
+                </div>
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-electric-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cogs text-2xl text-electric-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart Technology</h3>
+                    <p class="text-gray-600">Fitur pintar dengan aplikasi mobile dan GPS tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="produk" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Koleksi Sepeda Listrik</h2>
+                <p class="text-xl text-gray-600">Pilihan sepeda listrik untuk berbagai kebutuhan dan gaya hidup</p>
+            </div>
+            
+            <!-- Product Categories -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="bg-eco-600 text-white px-6 py-2 rounded-lg font-semibold">Semua</button>
+                <button class="bg-white text-eco-600 px-6 py-2 rounded-lg font-semibold border border-eco-200 hover:bg-eco-600 hover:text-white transition-colors">City Bike</button>
+                <button class="bg-white text-eco-600 px-6 py-2 rounded-lg font-semibold border border-eco-200 hover:bg-eco-600 hover:text-white transition-colors">Mountain Bike</button>
+                <button class="bg-white text-eco-600 px-6 py-2 rounded-lg font-semibold border border-eco-200 hover:bg-eco-600 hover:text-white transition-colors">Folding Bike</button>
+                <button class="bg-white text-eco-600 px-6 py-2 rounded-lg font-semibold border border-eco-200 hover:bg-eco-600 hover:text-white transition-colors">Scooter</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-eco-100 to-eco-200 flex items-center justify-center">
+                        <i class="fas fa-bicycle text-6xl text-eco-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">EcoBike Urban Pro</h3>
+                            <span class="bg-eco-100 text-eco-700 px-2 py-1 rounded text-sm font-semibold">City</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Motor 500W • Range 80km • Speed 45km/h</p>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-battery-full text-electric-500 mr-2"></i>
+                                <span>Lithium 48V 15Ah</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-weight-hanging text-eco-500 mr-2"></i>
+                                <span>Berat: 25kg</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-clock text-electric-500 mr-2"></i>
+                                <span>Charging: 4-6 jam</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-eco-600">Rp 8.500.000</span>
+                                <p class="text-sm text-gray-500 line-through">Rp 10.000.000</p>
+                            </div>
+                        </div>
+                        <button class="w-full bg-eco-600 text-white py-2 rounded-lg font-semibold hover:bg-eco-700 transition-colors">
+                            Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-electric-100 to-electric-200 flex items-center justify-center">
+                        <i class="fas fa-bicycle text-6xl text-electric-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">EcoBike Mountain X</h3>
+                            <span class="bg-electric-100 text-electric-700 px-2 py-1 rounded text-sm font-semibold">MTB</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Motor 750W • Range 70km • Speed 50km/h</p>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-battery-full text-electric-500 mr-2"></i>
+                                <span>Lithium 48V 20Ah</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-weight-hanging text-eco-500 mr-2"></i>
+                                <span>Berat: 28kg</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-mountain text-electric-500 mr-2"></i>
+                                <span>All Terrain</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-electric-600">Rp 12.500.000</span>
+                                <p class="text-sm text-gray-500 line-through">Rp 15.000.000</p>
+                            </div>
+                        </div>
+                        <button class="w-full bg-electric-600 text-white py-2 rounded-lg font-semibold hover:bg-electric-700 transition-colors">
+                            Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-eco-100 to-eco-200 flex items-center justify-center">
+                        <i class="fas fa-bicycle text-6xl text-eco-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">EcoBike Fold Mini</h3>
+                            <span class="bg-eco-100 text-eco-700 px-2 py-1 rounded text-sm font-semibold">Folding</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Motor 350W • Range 50km • Speed 35km/h</p>
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-battery-half text-electric-500 mr-2"></i>
+                                <span>Lithium 36V 10Ah</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-weight-hanging text-eco-500 mr-2"></i>
+                                <span>Berat: 18kg</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-compress-arrows-alt text-electric-500 mr-2"></i>
+                                <span>Portable & Compact</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-eco-600">Rp 5.500.000</span>
+                                <p class="text-sm text-gray-500 line-through">Rp 7.000.000</p>
+                            </div>
+                        </div>
+                        <button class="w-full bg-eco-600 text-white py-2 rounded-lg font-semibold hover:bg-eco-700 transition-colors">
+                            Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-eco-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-eco-700 transition-colors">
+                    Lihat Semua Produk
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="teknologi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Teknologi Smart EcoBike</h2>
+                <p class="text-xl text-gray-600">Fitur canggih yang membuat perjalanan Anda lebih nyaman dan aman</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-eco-100 p-3 rounded-lg">
+                            <i class="fas fa-mobile-alt text-eco-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Aplikasi Mobile</h3>
+                            <p class="text-gray-600">Kontrol sepeda, monitor baterai, dan tracking perjalanan melalui smartphone</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-electric-100 p-3 rounded-lg">
+                            <i class="fas fa-map-marker-alt text-electric-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">GPS Tracking</h3>
+                            <p class="text-gray-600">Sistem anti-maling dengan tracking real-time dan alarm otomatis</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-eco-100 p-3 rounded-lg">
+                            <i class="fas fa-plug text-eco-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Fast Charging</h3>
+                            <p class="text-gray-600">Teknologi pengisian cepat 4-6 jam untuk jangkauan maksimal</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-electric-100 p-3 rounded-lg">
+                            <i class="fas fa-shield-alt text-electric-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Safety System</h3>
+                            <p class="text-gray-600">Sistem pengereman regeneratif dan lampu LED otomatis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-eco-50 to-electric-50 rounded-2xl p-8">
+                    <div class="text-center">
+                        <i class="fas fa-bicycle text-8xl text-eco-600 mb-6"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">EcoBike App</h3>
+                        <p class="text-gray-600 mb-6">Download aplikasi resmi untuk pengalaman berkendara yang lebih optimal</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button class="bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center">
+                                <i class="fab fa-apple mr-2"></i>
+                                App Store
+                            </button>
+                            <button class="bg-eco-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center">
+                                <i class="fab fa-google-play mr-2"></i>
+                                Play Store
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-eco-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Mulai Perjalanan Hijau Anda!</h2>
+            <p class="text-xl text-eco-100 mb-8">Bergabunglah dengan revolusi transportasi ramah lingkungan bersama EcoBike</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-eco-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-shopping-cart mr-2"></i>
+                    Beli Sekarang
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-eco-600 transition-colors">
+                    <i class="fas fa-whatsapp mr-2"></i>
+                    Konsultasi Gratis
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bicycle text-2xl text-eco-400 mr-2"></i>
+                        <span class="text-xl font-bold">EcoBike Indonesia</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Pionir sepeda listrik di Indonesia dengan komitmen pada lingkungan yang berkelanjutan.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-eco-400 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-eco-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-eco-400 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-eco-400 transition-colors">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Produk</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">City Bike</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Mountain Bike</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Folding Bike</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Aksesoris</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Layanan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Test Ride</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Service Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Spare Part</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Garansi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Jl. Green Technology No. 88, Jakarta</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>(021) 555-BIKE</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@ecobike.id</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 EcoBike Indonesia. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'md:hidden bg-white shadow-lg absolute top-16 left-0 w-full z-40 hidden border-b-4 border-eco-500';
+        mobileMenu.innerHTML = `
+            <div class="px-4 py-4 space-y-2">
+                <a href="#beranda" class="block py-2 text-gray-700 hover:text-eco-600">Beranda</a>
+                <a href="#produk" class="block py-2 text-gray-700 hover:text-eco-600">Produk</a>
+                <a href="#teknologi" class="block py-2 text-gray-700 hover:text-eco-600">Teknologi</a>
+                <a href="#tentang" class="block py-2 text-gray-700 hover:text-eco-600">Tentang Kami</a>
+                <a href="#kontak" class="block py-2 bg-eco-600 text-white px-4 rounded-lg text-center">Beli Sekarang</a>
+            </div>
+        `;
+        document.querySelector('nav').appendChild(mobileMenu);
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Product category filter
+        const categoryButtons = document.querySelectorAll('section[id="produk"] button');
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove('bg-eco-600', 'text-white');
+                    btn.classList.add('bg-white', 'text-eco-600', 'border', 'border-eco-200');
+                });
+                button.classList.remove('bg-white', 'text-eco-600', 'border', 'border-eco-200');
+                button.classList.add('bg-eco-600', 'text-white');
+            });
+        });
+    </script>
+</body>
+</html>

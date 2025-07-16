@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Nusantara - Cita Rasa Autentik Indonesia</title>
+    <meta name="description" content="Cafe Nusantara menyajikan hidangan autentik Indonesia dengan cita rasa terbaik, suasana nyaman, dan pelayanan ramah di Jakarta.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cafe: {
+                            50: '#fefdf8',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        spice: {
+                            50: '#fef7f0',
+                            100: '#feedde',
+                            200: '#fdd5b3',
+                            500: '#ea580c',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-utensils text-2xl text-cafe-600 mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">Cafe Nusantara</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda" class="text-gray-700 hover:text-cafe-600 transition-colors">Beranda</a>
+                    <a href="#menu" class="text-gray-700 hover:text-cafe-600 transition-colors">Menu</a>
+                    <a href="#tentang" class="text-gray-700 hover:text-cafe-600 transition-colors">Tentang</a>
+                    <a href="#galeri" class="text-gray-700 hover:text-cafe-600 transition-colors">Galeri</a>
+                    <a href="#kontak" class="bg-cafe-600 text-white px-4 py-2 rounded-lg hover:bg-cafe-700 transition-colors">Reservasi</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-700 hover:text-cafe-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="pt-16 bg-gradient-to-br from-cafe-50 to-spice-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        Nikmati Cita Rasa
+                        <span class="text-cafe-600">Nusantara</span>
+                        Terbaik
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Rasakan pengalaman kuliner autentik Indonesia dengan resep turun-temurun. 
+                        Setiap hidangan dibuat dengan bahan-bahan segar dan cinta untuk menghadirkan kelezatan sejati.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-cafe-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-cafe-700 transition-colors">
+                            <i class="fas fa-book-open mr-2"></i>
+                            Lihat Menu
+                        </button>
+                        <button class="border-2 border-cafe-600 text-cafe-600 px-8 py-3 rounded-lg font-semibold hover:bg-cafe-600 hover:text-white transition-colors">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            Reservasi Meja
+                        </button>
+                    </div>
+                    <div class="mt-8 flex items-center space-x-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-cafe-500 mr-2"></i>
+                            <span class="text-gray-600">Rating 4.8/5</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-spice-500 mr-2"></i>
+                            <span class="text-gray-600">Buka 24 Jam</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shipping-fast text-cafe-500 mr-2"></i>
+                            <span class="text-gray-600">Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Promo Hari Ini</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-cafe-100 rounded-lg p-4 text-center">
+                                <h4 class="font-bold text-cafe-800 mb-2">Paket Keluarga</h4>
+                                <span class="text-2xl font-bold text-cafe-700">Rp 150K</span>
+                                <p class="text-sm text-gray-600">Untuk 4 orang</p>
+                            </div>
+                            <div class="bg-spice-100 rounded-lg p-4 text-center">
+                                <h4 class="font-bold text-spice-800 mb-2">Happy Hour</h4>
+                                <span class="text-2xl font-bold text-spice-700">30% OFF</span>
+                                <p class="text-sm text-gray-600">15:00 - 17:00</p>
+                            </div>
+                            <div class="bg-gray-100 rounded-lg p-4 text-center">
+                                <h4 class="font-bold text-gray-800 mb-2">Free WiFi</h4>
+                                <span class="text-cafe-700 font-semibold">Unlimited</span>
+                                <p class="text-sm text-gray-600">Untuk semua customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Mengapa Memilih Cafe Nusantara?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Pengalaman kuliner terbaik dengan komitmen pada kualitas dan cita rasa autentik
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-cafe-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-seedling text-2xl text-cafe-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Bahan Segar</h3>
+                    <p class="text-gray-600">Menggunakan bahan-bahan segar pilihan terbaik setiap hari</p>
+                </div>
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-spice-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-fire text-2xl text-spice-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Resep Autentik</h3>
+                    <p class="text-gray-600">Resep turun-temurun yang terjaga keasliannya</p>
+                </div>
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-cafe-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-home text-2xl text-cafe-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Suasana Nyaman</h3>
+                    <p class="text-gray-600">Interior hangat dengan nuansa tradisional Indonesia</p>
+                </div>
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-spice-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl text-spice-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Pelayanan Ramah</h3>
+                    <p class="text-gray-600">Staff berpengalaman dengan pelayanan yang memuaskan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Menu Favorit Kami</h2>
+                <p class="text-xl text-gray-600">Pilihan hidangan terbaik dengan cita rasa yang tak terlupakan</p>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="bg-cafe-600 text-white px-6 py-2 rounded-lg font-semibold">Semua</button>
+                <button class="bg-white text-cafe-600 px-6 py-2 rounded-lg font-semibold border border-cafe-200 hover:bg-cafe-600 hover:text-white transition-colors">Makanan Utama</button>
+                <button class="bg-white text-cafe-600 px-6 py-2 rounded-lg font-semibold border border-cafe-200 hover:bg-cafe-600 hover:text-white transition-colors">Snack</button>
+                <button class="bg-white text-cafe-600 px-6 py-2 rounded-lg font-semibold border border-cafe-200 hover:bg-cafe-600 hover:text-white transition-colors">Minuman</button>
+                <button class="bg-white text-cafe-600 px-6 py-2 rounded-lg font-semibold border border-cafe-200 hover:bg-cafe-600 hover:text-white transition-colors">Dessert</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu Item 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-cafe-200 to-cafe-300 flex items-center justify-center">
+                        <i class="fas fa-drumstick-bite text-6xl text-cafe-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Rendang Daging Sapi</h3>
+                            <span class="bg-spice-100 text-spice-700 px-2 py-1 rounded text-sm font-semibold">Favorit</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Rendang autentik Padang dengan daging sapi empuk dan bumbu rempah pilihan</p>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-cafe-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-600">(4.9)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-cafe-600">Rp 35.000</span>
+                            <button class="bg-cafe-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-cafe-700 transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-spice-200 to-spice-300 flex items-center justify-center">
+                        <i class="fas fa-fish text-6xl text-spice-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Ikan Bakar Kecap</h3>
+                            <span class="bg-cafe-100 text-cafe-700 px-2 py-1 rounded text-sm font-semibold">Spesial</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Ikan segar dibakar dengan bumbu kecap manis dan sambal terasi pilihan</p>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-cafe-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-600">(4.7)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-spice-600">Rp 28.000</span>
+                            <button class="bg-spice-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-spice-700 transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-cafe-200 to-cafe-300 flex items-center justify-center">
+                        <i class="fas fa-coffee text-6xl text-cafe-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Kopi Tubruk Nusantara</h3>
+                            <span class="bg-cafe-100 text-cafe-700 px-2 py-1 rounded text-sm font-semibold">Signature</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Kopi robusta asli Indonesia dengan aroma khas dan rasa yang kuat</p>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-cafe-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-600">(4.8)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-cafe-600">Rp 15.000</span>
+                            <button class="bg-cafe-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-cafe-700 transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-spice-200 to-spice-300 flex items-center justify-center">
+                        <i class="fas fa-bowl-rice text-6xl text-spice-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Nasi Gudeg Yogya</h3>
+                            <span class="bg-spice-100 text-spice-700 px-2 py-1 rounded text-sm font-semibold">Tradisional</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Gudeg manis khas Yogyakarta dengan ayam kampung dan sambal krecek</p>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-cafe-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-600">(4.6)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-spice-600">Rp 22.000</span>
+                            <button class="bg-spice-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-spice-700 transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-cafe-200 to-cafe-300 flex items-center justify-center">
+                        <i class="fas fa-ice-cream text-6xl text-cafe-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Es Cendol Durian</h3>
+                            <span class="bg-cafe-100 text-cafe-700 px-2 py-1 rounded text-sm font-semibold">Segar</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Es cendol dengan santan kental, gula merah, dan durian asli Medan</p>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-cafe-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-600">(4.9)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-cafe-600">Rp 18.000</span>
+                            <button class="bg-cafe-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-cafe-700 transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-spice-200 to-spice-300 flex items-center justify-center">
+                        <i class="fas fa-pepper-hot text-6xl text-spice-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Ayam Geprek Sambalado</h3>
+                            <span class="bg-spice-100 text-spice-700 px-2 py-1 rounded text-sm font-semibold">Pedas</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Ayam crispy digeprek dengan sambal balado level 1-5 sesuai selera</p>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-cafe-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-600">(4.7)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-spice-600">Rp 25.000</span>
+                            <button class="bg-spice-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-spice-700 transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-cafe-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-cafe-700 transition-colors">
+                    Lihat Menu Lengkap
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Kata Mereka Tentang Kami</h2>
+                <p class="text-xl text-gray-600">Pengalaman nyata pelanggan setia Cafe Nusantara</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-cafe-50 rounded-xl p-6">
+                    <div class="flex text-cafe-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Rendangnya benar-benar autentik! Rasanya persis seperti buatan nenek di kampung. Suasana cafenya juga sangat nyaman."</p>
+                    <div class="flex items-center">
+                        <div class="bg-cafe-200 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-cafe-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Sari Dewi</p>
+                            <p class="text-sm text-gray-600">Food Blogger</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-spice-50 rounded-xl p-6">
+                    <div class="flex text-spice-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Pelayanannya ramah banget dan makanannya enak semua. Jadi tempat favorit untuk meeting sama teman-teman."</p>
+                    <div class="flex items-center">
+                        <div class="bg-spice-200 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-spice-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Budi Santoso</p>
+                            <p class="text-sm text-gray-600">Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-cafe-50 rounded-xl p-6">
+                    <div class="flex text-cafe-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"WiFi kencang, colokan banyak, perfect untuk kerja. Plus kopinya enak dan harganya terjangkau!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-cafe-200 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-cafe-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Maya Indira</p>
+                            <p class="text-sm text-gray-600">Digital Nomad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-cafe-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Siap Merasakan Kelezatan Nusantara?</h2>
+            <p class="text-xl text-cafe-100 mb-8">Kunjungi Cafe Nusantara sekarang atau pesan delivery untuk dinikmati di rumah</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-cafe-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-store mr-2"></i>
+                    Kunjungi Cafe
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-cafe-600 transition-colors">
+                    <i class="fas fa-motorcycle mr-2"></i>
+                    Pesan Delivery
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-utensils text-2xl text-cafe-400 mr-2"></i>
+                        <span class="text-xl font-bold">Cafe Nusantara</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Menyajikan cita rasa autentik Indonesia dengan kualitas terbaik dan pelayanan yang memuaskan.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-cafe-400 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-cafe-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-cafe-400 transition-colors">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-cafe-400 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Menu</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Makanan Utama</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Snack & Appetizer</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Minuman</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Dessert</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Layanan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Dine In</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Take Away</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Delivery</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Catering</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Jl. Kuliner Nusantara No. 99, Jakarta</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>(021) 777-NUSA</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@cafenusantara.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>Buka 24 Jam Setiap Hari</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Cafe Nusantara. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'md:hidden bg-white shadow-lg absolute top-16 left-0 w-full z-40 hidden';
+        mobileMenu.innerHTML = `
+            <div class="px-4 py-4 space-y-2">
+                <a href="#beranda" class="block py-2 text-gray-700 hover:text-cafe-600">Beranda</a>
+                <a href="#menu" class="block py-2 text-gray-700 hover:text-cafe-600">Menu</a>
+                <a href="#tentang" class="block py-2 text-gray-700 hover:text-cafe-600">Tentang</a>
+                <a href="#galeri" class="block py-2 text-gray-700 hover:text-cafe-600">Galeri</a>
+                <a href="#kontak" class="block py-2 bg-cafe-600 text-white px-4 rounded-lg text-center">Reservasi</a>
+            </div>
+        `;
+        document.querySelector('nav').appendChild(mobileMenu);
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Menu category filter
+        const categoryButtons = document.querySelectorAll('section[id="menu"] button');
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove('bg-cafe-600', 'text-white');
+                    btn.classList.add('bg-white', 'text-cafe-600', 'border', 'border-cafe-200');
+                });
+                button.classList.remove('bg-white', 'text-cafe-600', 'border', 'border-cafe-200');
+                button.classList.add('bg-cafe-600', 'text-white');
+            });
+        });
+    </script>
+</body>
+</html>

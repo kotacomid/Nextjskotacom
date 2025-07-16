@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalBoost Agency - Digital Marketing Specialist Indonesia</title>
+    <meta name="description" content="DigitalBoost Agency adalah agensi digital marketing terdepan yang membantu bisnis Anda tumbuh dengan strategi SEO, social media, dan advertising yang efektif.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        digital: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7c3aed',
+                            800: '#6b21a8',
+                            900: '#581c87',
+                        },
+                        growth: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f9a8d4',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                            800: '#9d174d',
+                            900: '#831843',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-rocket text-2xl text-digital-600 mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">DigitalBoost</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda" class="text-gray-700 hover:text-digital-600 transition-colors">Beranda</a>
+                    <a href="#layanan" class="text-gray-700 hover:text-digital-600 transition-colors">Layanan</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-digital-600 transition-colors">Portfolio</a>
+                    <a href="#tentang" class="text-gray-700 hover:text-digital-600 transition-colors">Tentang</a>
+                    <a href="#kontak" class="bg-gradient-to-r from-digital-600 to-growth-600 text-white px-4 py-2 rounded-lg hover:from-digital-700 hover:to-growth-700 transition-all">Konsultasi Gratis</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-700 hover:text-digital-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="pt-16 bg-gradient-to-br from-digital-50 to-growth-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        Tingkatkan Bisnis Anda dengan
+                        <span class="bg-gradient-to-r from-digital-600 to-growth-600 bg-clip-text text-transparent">Digital Marketing</span>
+                        yang Efektif
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Kami membantu bisnis Anda tumbuh dengan strategi digital marketing yang terbukti. 
+                        Dari SEO, social media, hingga advertising - semua dalam satu solusi terintegrasi.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-gradient-to-r from-digital-600 to-growth-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-digital-700 hover:to-growth-700 transition-all">
+                            <i class="fas fa-chart-line mr-2"></i>
+                            Analisis Gratis
+                        </button>
+                        <button class="border-2 border-digital-600 text-digital-600 px-8 py-3 rounded-lg font-semibold hover:bg-digital-600 hover:text-white transition-colors">
+                            <i class="fas fa-play mr-2"></i>
+                            Lihat Case Study
+                        </button>
+                    </div>
+                    <div class="mt-8 grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold bg-gradient-to-r from-digital-600 to-growth-600 bg-clip-text text-transparent">300+</div>
+                            <div class="text-sm text-gray-600">Klien Puas</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold bg-gradient-to-r from-digital-600 to-growth-600 bg-clip-text text-transparent">150%</div>
+                            <div class="text-sm text-gray-600">Avg Growth</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold bg-gradient-to-r from-digital-600 to-growth-600 bg-clip-text text-transparent">5+</div>
+                            <div class="text-sm text-gray-600">Tahun Pengalaman</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Audit Website Gratis</h3>
+                            <p class="text-gray-600">Dapatkan analisis lengkap website Anda</p>
+                        </div>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Website URL</label>
+                                <input type="url" placeholder="https://yourwebsite.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-digital-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                                <input type="email" placeholder="your@email.com" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-digital-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Jenis Bisnis</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-digital-500 focus:border-transparent">
+                                    <option>E-commerce</option>
+                                    <option>Jasa</option>
+                                    <option>Manufaktur</option>
+                                    <option>F&B</option>
+                                    <option>Lainnya</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-digital-600 to-growth-600 text-white py-3 rounded-lg font-semibold hover:from-digital-700 hover:to-growth-700 transition-all">
+                                Dapatkan Audit Gratis
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Mengapa Memilih DigitalBoost?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Partner terpercaya untuk mengembangkan bisnis Anda di era digital dengan hasil yang terukur
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-gradient-to-br from-digital-100 to-growth-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-2xl text-digital-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Hasil Terukur</h3>
+                    <p class="text-gray-600">Setiap strategi dilengkapi dengan KPI yang jelas dan laporan real-time</p>
+                </div>
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-gradient-to-br from-digital-100 to-growth-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-2xl text-growth-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Tim Expert</h3>
+                    <p class="text-gray-600">Tim berpengalaman dengan sertifikasi Google, Facebook, dan platform digital</p>
+                </div>
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-gradient-to-br from-digital-100 to-growth-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cog text-2xl text-digital-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Solusi Custom</h3>
+                    <p class="text-gray-600">Strategi disesuaikan dengan kebutuhan dan budget bisnis Anda</p>
+                </div>
+                <div class="text-center p-6 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="bg-gradient-to-br from-digital-100 to-growth-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-2xl text-growth-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Support 24/7</h3>
+                    <p class="text-gray-600">Dedicated account manager dan support penuh sepanjang waktu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Layanan Digital Marketing</h2>
+                <p class="text-xl text-gray-600">Solusi lengkap untuk semua kebutuhan digital marketing bisnis Anda</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-digital-100 to-digital-200 flex items-center justify-center">
+                        <i class="fas fa-search text-6xl text-digital-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">SEO & SEM</h3>
+                        <p class="text-gray-600 mb-4">Optimasi website untuk mesin pencari dan iklan berbayar yang efektif</p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-digital-500 mr-2"></i>
+                                <span>Keyword Research</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-digital-500 mr-2"></i>
+                                <span>On-Page SEO</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-digital-500 mr-2"></i>
+                                <span>Google Ads Management</span>
+                            </li>
+                        </ul>
+                        <div class="text-2xl font-bold text-digital-600 mb-2">Mulai dari Rp 5 Juta</div>
+                        <p class="text-sm text-gray-500 mb-4">/bulan</p>
+                        <button class="w-full bg-digital-600 text-white py-2 rounded-lg font-semibold hover:bg-digital-700 transition-colors">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-growth-100 to-growth-200 flex items-center justify-center">
+                        <i class="fas fa-share-alt text-6xl text-growth-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Social Media Marketing</h3>
+                        <p class="text-gray-600 mb-4">Kelola dan kembangkan brand awareness melalui platform media sosial</p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-growth-500 mr-2"></i>
+                                <span>Content Strategy</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-growth-500 mr-2"></i>
+                                <span>Community Management</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-growth-500 mr-2"></i>
+                                <span>Paid Social Ads</span>
+                            </li>
+                        </ul>
+                        <div class="text-2xl font-bold text-growth-600 mb-2">Mulai dari Rp 3 Juta</div>
+                        <p class="text-sm text-gray-500 mb-4">/bulan</p>
+                        <button class="w-full bg-growth-600 text-white py-2 rounded-lg font-semibold hover:bg-growth-700 transition-colors">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-digital-100 to-digital-200 flex items-center justify-center">
+                        <i class="fas fa-bullhorn text-6xl text-digital-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Performance Marketing</h3>
+                        <p class="text-gray-600 mb-4">Campaign berbayar dengan fokus pada konversi dan ROI maksimal</p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-digital-500 mr-2"></i>
+                                <span>Facebook & Instagram Ads</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-digital-500 mr-2"></i>
+                                <span>TikTok Ads</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-digital-500 mr-2"></i>
+                                <span>Conversion Optimization</span>
+                            </li>
+                        </ul>
+                        <div class="text-2xl font-bold text-digital-600 mb-2">Mulai dari Rp 8 Juta</div>
+                        <p class="text-sm text-gray-500 mb-4">/bulan</p>
+                        <button class="w-full bg-digital-600 text-white py-2 rounded-lg font-semibold hover:bg-digital-700 transition-colors">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-growth-100 to-growth-200 flex items-center justify-center">
+                        <i class="fas fa-envelope text-6xl text-growth-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Email Marketing</h3>
+                        <p class="text-gray-600 mb-4">Otomatisasi email untuk nurturing leads dan retensi customer</p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-growth-500 mr-2"></i>
+                                <span>Email Automation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-growth-500 mr-2"></i>
+                                <span>Newsletter Design</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-growth-500 mr-2"></i>
+                                <span>Segmentation & Analytics</span>
+                            </li>
+                        </ul>
+                        <div class="text-2xl font-bold text-growth-600 mb-2">Mulai dari Rp 2 Juta</div>
+                        <p class="text-sm text-gray-500 mb-4">/bulan</p>
+                        <button class="w-full bg-growth-600 text-white py-2 rounded-lg font-semibold hover:bg-growth-700 transition-colors">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-digital-100 to-digital-200 flex items-center justify-center">
+                        <i class="fas fa-video text-6xl text-digital-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Content Creation</h3>
+                        <p class="text-gray-600 mb-4">Produksi konten visual dan video berkualitas tinggi</p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-digital-500 mr-2"></i>
+                                <span>Video Production</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-digital-500 mr-2"></i>
+                                <span>Graphic Design</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-digital-500 mr-2"></i>
+                                <span>Photography</span>
+                            </li>
+                        </ul>
+                        <div class="text-2xl font-bold text-digital-600 mb-2">Mulai dari Rp 4 Juta</div>
+                        <p class="text-sm text-gray-500 mb-4">/bulan</p>
+                        <button class="w-full bg-digital-600 text-white py-2 rounded-lg font-semibold hover:bg-digital-700 transition-colors">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-growth-100 to-growth-200 flex items-center justify-center">
+                        <i class="fas fa-chart-bar text-6xl text-growth-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Analytics & Reporting</h3>
+                        <p class="text-gray-600 mb-4">Dashboard dan laporan komprehensif untuk tracking performance</p>
+                        <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-growth-500 mr-2"></i>
+                                <span>Custom Dashboard</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-growth-500 mr-2"></i>
+                                <span>Monthly Reports</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-growth-500 mr-2"></i>
+                                <span>ROI Analysis</span>
+                            </li>
+                        </ul>
+                        <div class="text-2xl font-bold text-growth-600 mb-2">Mulai dari Rp 1.5 Juta</div>
+                        <p class="text-sm text-gray-500 mb-4">/bulan</p>
+                        <button class="w-full bg-growth-600 text-white py-2 rounded-lg font-semibold hover:bg-growth-700 transition-colors">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Success Stories</h2>
+                <p class="text-xl text-gray-600">Hasil nyata yang telah kami capai bersama klien</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-digital-50 to-growth-50 rounded-xl p-6">
+                    <div class="text-center mb-4">
+                        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shopping-cart text-2xl text-digital-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">E-commerce Fashion</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl font-bold text-digital-600">300%</div>
+                            <div class="text-sm text-gray-600">Increase Sales</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-growth-600">5x</div>
+                            <div class="text-sm text-gray-600">ROAS</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-4">Meningkatkan penjualan online 300% dalam 6 bulan melalui strategi social media ads dan SEO.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-digital-50 to-growth-50 rounded-xl p-6">
+                    <div class="text-center mb-4">
+                        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-utensils text-2xl text-growth-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">Restaurant Chain</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl font-bold text-digital-600">150%</div>
+                            <div class="text-sm text-gray-600">More Orders</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-growth-600">80%</div>
+                            <div class="text-sm text-gray-600">Cost Reduction</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-4">Optimasi Google Ads dan social media marketing untuk meningkatkan online orders.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-digital-50 to-growth-50 rounded-xl p-6">
+                    <div class="text-center mb-4">
+                        <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-graduation-cap text-2xl text-digital-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">EdTech Startup</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl font-bold text-growth-600">50K</div>
+                            <div class="text-sm text-gray-600">New Users</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-digital-600">25%</div>
+                            <div class="text-sm text-gray-600">Conversion Rate</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-4">Growth hacking strategy untuk user acquisition dan conversion optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-digital-600 to-growth-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Siap Mengembangkan Bisnis Anda?</h2>
+            <p class="text-xl text-white/90 mb-8">Konsultasi gratis dengan digital marketing expert kami sekarang</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-digital-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-phone mr-2"></i>
+                    Hubungi Sekarang
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-digital-600 transition-colors">
+                    <i class="fas fa-whatsapp mr-2"></i>
+                    WhatsApp Kami
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-rocket text-2xl text-digital-400 mr-2"></i>
+                        <span class="text-xl font-bold">DigitalBoost</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Agensi digital marketing terdepan yang membantu bisnis Anda tumbuh dengan strategi yang terbukti efektif.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-digital-400 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-digital-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-digital-400 transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-digital-400 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Layanan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">SEO & SEM</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Social Media Marketing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Performance Marketing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Content Creation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Perusahaan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Tim</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Karir</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Jl. Digital Hub No. 777, Jakarta</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>(021) 999-BOOST</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>hello@digitalboost.id</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 DigitalBoost Agency. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'md:hidden bg-white shadow-lg absolute top-16 left-0 w-full z-40 hidden';
+        mobileMenu.innerHTML = `
+            <div class="px-4 py-4 space-y-2">
+                <a href="#beranda" class="block py-2 text-gray-700 hover:text-digital-600">Beranda</a>
+                <a href="#layanan" class="block py-2 text-gray-700 hover:text-digital-600">Layanan</a>
+                <a href="#portfolio" class="block py-2 text-gray-700 hover:text-digital-600">Portfolio</a>
+                <a href="#tentang" class="block py-2 text-gray-700 hover:text-digital-600">Tentang</a>
+                <a href="#kontak" class="block py-2 bg-gradient-to-r from-digital-600 to-growth-600 text-white px-4 rounded-lg text-center">Konsultasi Gratis</a>
+            </div>
+        `;
+        document.querySelector('nav').appendChild(mobileMenu);
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Stats counter animation
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.text-2xl');
+                    counters.forEach(counter => {
+                        const text = counter.textContent;
+                        const target = parseInt(text.replace(/\D/g, ''));
+                        if (!isNaN(target)) {
+                            let current = 0;
+                            const increment = target / 50;
+                            const timer = setInterval(() => {
+                                current += increment;
+                                if (current >= target) {
+                                    counter.textContent = text;
+                                    clearInterval(timer);
+                                } else {
+                                    counter.textContent = text.replace(/\d+/, Math.floor(current));
+                                }
+                            }, 50);
+                        }
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe stats section
+        const statsSection = document.querySelector('#beranda');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Tim kami akan menghubungi Anda dalam 24 jam.');
+        });
+    </script>
+</body>
+</html>
